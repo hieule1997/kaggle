@@ -1,0 +1,146 @@
+<table border="1" class="dataframe dataframe table table-striped table-bordered table-condensed table-hover">
+    <thead>
+        <tr style="text-align: right;">
+            <th></th>
+            <th>Lượt Tải</th>
+            <th>Tổng Doanh thu</th>
+        </tr>
+        <tr>
+            <th>VGAME_1
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Mức cước gói 10000đ</th>
+            <td>278</td>
+            <td>2780000</td>
+        </tr>
+        <tr>
+            <th>Mức cước gói 2000đ</th>
+            <td>993463</td>
+            <td>1986926000</td>
+        </tr>
+        <tr>
+            <th>Mức cước gói 30000đ</th>
+            <td>18</td>
+            <td>540000</td>
+        </tr>
+        <tr>
+            <th>Mức cước gói 3000đ</th>
+            <td>
+                1</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <th>All</th>
+            <td>993760</td>
+            <td>1990249000</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table border=\"1\" class=\"dataframe dataframe table table-striped table-bordered table-condensed table-hover\">
+    <thead>
+        <tr style=\"text-align: right;\">
+            <th></th>
+            <th>L\u01b0\u1ee3t T\u1ea3i</th>
+            <th>
+                T\u1ed5ng Doanh thu</th>
+        </tr>
+        <tr>
+            <th>VGAME_1</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>M\u1ee9c c\u01b0\u1edbc g\u00f3i 10000\u0111</th>
+            <td>278</td>
+            <td>2780000</td>
+        </tr>
+        <tr>
+            <th>M\u1ee9c c\u01b0\u1edbc g\u00f3i 2000\u0111</th>
+            <td>993463</td>
+            <td>1986926000</td>
+        </tr>
+        <tr>
+            <th>M\u1ee9c c\u01b0\u1edbc g\u00f3i 30000\u0111</th>
+            <td>18</td>
+            <td>540000</td>
+        </tr>
+        <tr>
+            <th>M\u1ee9c c\u01b0\u1edbc g\u00f3i 3000\u0111</th>
+            <td>1</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <th>All
+            </th>
+            <td>993760</td>
+            <td>1990249000</td>
+        </tr>
+    </tbody>\n
+</table>
+
+{"cache_key": "9b009e90b84c7e864e96f40a2dfcca32", "cached_dttm": "2020-05-19T06:27:20", "cache_timeout": null, "error":
+null, "form_data": {"datasource": "21__table", "viz_type": "pivot_table", "slice_id": 685, "url_params": {},
+"granularity_sqla": "Date", "time_grain_sqla": "P1M", "time_range": "No filter", "metrics": ["L\u01b0\u1ee3t T\u1ea3i",
+"T\u1ed5ng Doanh thu"], "adhoc_filters": [{"clause": "WHERE", "comparator": ["VGAME"], "expressionType": "SIMPLE",
+"filterOptionName": "filter_m20oc43l9o_2y98eje6o05", "fromFormData": true, "operator": "in", "sqlExpression": null,
+"subject": "VAS_Name"}, {"clause": "HAVING", "comparator": null, "expressionType": "SQL", "filterOptionName":
+"filter_bmmkkptct3_zvu4hz3ce9q", "fromFormData": true, "operator": null, "sqlExpression":
+"\tifNull(sumMergeIf(Revenue,\r\n\t\t(VAS_Name = 'VGAME' and Sub_Transaction_Type='10') \r\n\t\tOR (VAS_Name = 'Playbox'
+and Sub_Transaction_Type='0')\r\n\t\tOR (VAS_Name = 'MRADIO' and Sub_Transaction_Type='0' and Sub_Type IN
+('1','2'))\r\n\t\tOR (VAS_Name = 'MTSUB' and TABLE_MSISDN LIKE '%totalCDR%' and Sub_Type IN ('1','2','3'))\r\n\t\tOR
+(VAS_Name = 'TYVN')\r\n\t\tOR (VAS_Name = 'ZootaVNP' and Sub_Type IN ('1','3'))\r\n\t\tOR (VAS_Name = 'IBOX' and
+TABLE_Col IN ('MYIVRCALLLOG','MYVASCLOUDCDR') and Price>0)\r\n\t\tOR (VAS_Name = 'VietTalk' and Sub_Transaction_Type IN
+('1','2','3','4') and Sub_Type IN ('1','2'))\r\n\t\tOR (VAS_Name = 'ZootaMBF' and TABLE_MSISDN='CDR')\r\n\t\t),0)>0",
+"subject": null}, {"clause": "WHERE", "expressionType": "SIMPLE", "filterOptionName":
+"54b198f6-a776-49b9-b4a7-3fd00e10036a", "comparator": [2020], "operator": "in", "subject": "N\u0103m"}], "groupby":
+["VGAME_1"], "columns": [], "row_limit": 10000, "pandas_aggfunc": "sum", "pivot_margins": true, "number_format":
+"SMART_NUMBER", "combine_metric": true, "transpose_pivot": false, "label_colors": {}, "where": "", "having":
+"(\tifNull(sumMergeIf(Revenue,\r\n\t\t(VAS_Name = 'VGAME' and Sub_Transaction_Type='10') \r\n\t\tOR (VAS_Name =
+'Playbox' and Sub_Transaction_Type='0')\r\n\t\tOR (VAS_Name = 'MRADIO' and Sub_Transaction_Type='0' and Sub_Type IN
+('1','2'))\r\n\t\tOR (VAS_Name = 'MTSUB' and TABLE_MSISDN LIKE '%totalCDR%' and Sub_Type IN ('1','2','3'))\r\n\t\tOR
+(VAS_Name = 'TYVN')\r\n\t\tOR (VAS_Name = 'ZootaVNP' and Sub_Type IN ('1','3'))\r\n\t\tOR (VAS_Name = 'IBOX' and
+TABLE_Col IN ('MYIVRCALLLOG','MYVASCLOUDCDR') and Price>0)\r\n\t\tOR (VAS_Name = 'VietTalk' and Sub_Transaction_Type IN
+('1','2','3','4') and Sub_Type IN ('1','2'))\r\n\t\tOR (VAS_Name = 'ZootaMBF' and TABLE_MSISDN='CDR')\r\n\t\t),0)>0)",
+"having_filters": [], "filters": [{"col": "VAS_Name", "op": "in", "val": ["VGAME"]}, {"col": "N\u0103m", "op": "in",
+"val": [2020]}]}, "is_cached": true, "query": "SELECT if(VAS_Name='VGAME'\n and Sub_Type!='4', concat('M\u1ee9c
+c\u01b0\u1edbc g\u00f3i ', toString(Price), '\u0111'), concat('M\u1ee9c N\u1ed9i dung ', toString(Price), '\u0111')) AS
+\"VGAME_1\",\n ifNull(countMergeIf(sum_Sub, (VAS_Name = 'VGAME'\n and Sub_Transaction_Type='10')\n OR (VAS_Name =
+'Playbox'\n and Sub_Transaction_Type='0')\n OR (VAS_Name = 'MRADIO'\n and Sub_Transaction_Type='0'\n and Sub_Type IN
+('1', '2')\n and Price>0)\n OR (VAS_Name = 'MTSUB'\n and Sub_Type IN ('1', '2', '3'))\n OR (VAS_Name = 'TYVN')\n OR
+(VAS_Name = 'ZootaVNP'\n and Sub_Type IN ('1', '3')\n and Price>0)\n OR (VAS_Name = 'IBOX'\n and TABLE_Col IN
+('MYVASCLOUDCDR')\n and Price>0\n OR VAS_Name='IBOX'\n and TABLE_Col='MYIVRCALLLOG')\n OR (VAS_Name = 'VietTalk'\n and
+Sub_Transaction_Type IN ('1', '2', '3', '4')\n and Sub_Type IN ('1', '2'))\n OR (VAS_Name = 'ZootaMBF'\n and
+TABLE_MSISDN='CDR')), 0) AS \"L\u01b0\u1ee3t T\u1ea3i\",\n ifNull(sumMergeIf(Revenue, (VAS_Name = 'VGAME'\n and
+Sub_Transaction_Type='10')\n OR (VAS_Name = 'Playbox'\n and Sub_Transaction_Type='0')\n OR (VAS_Name = 'MRADIO'\n and
+Sub_Transaction_Type='0'\n and Sub_Type IN ('1', '2')\n and Price>0)\n OR (VAS_Name = 'MTSUB'\n and TABLE_MSISDN LIKE
+'%totalCDR%'\n and Sub_Type IN ('1', '2', '3'))\n OR (VAS_Name = 'TYVN'\n and Sub_Transaction_Type='0')\n OR (VAS_Name =
+'ZootaVNP'\n and Sub_Type IN ('1', '3'))\n OR (VAS_Name = 'IBOX'\n and TABLE_Col IN ('MYIVRCALLLOG', 'MYVASCLOUDCDR')\n
+and Price>0)\n OR (VAS_Name = 'VietTalk'\n and Sub_Transaction_Type IN ('1', '2', '3', '4')\n and Sub_Type IN ('1',
+'2')\n and STATUS='0')\n OR (VAS_Name = 'ZootaMBF'\n and TABLE_MSISDN='CDR')), 0) AS \"T\u1ed5ng Doanh thu\"\nFROM
+\"VAS_Summary\"\nWHERE \"VAS_Name\" IN ('VGAME')\n AND toYear(Date,'Asia/Ho_Chi_Minh') IN (2020)\nGROUP BY
+if(VAS_Name='VGAME'\n and Sub_Type!='4', concat('M\u1ee9c c\u01b0\u1edbc g\u00f3i ', toString(Price), '\u0111'),
+concat('M\u1ee9c N\u1ed9i dung ', toString(Price), '\u0111'))\nHAVING ((ifNull(sumMergeIf(Revenue, (VAS_Name = 'VGAME'\n
+and Sub_Transaction_Type='10')\n OR (VAS_Name = 'Playbox'\n and Sub_Transaction_Type='0')\n OR (VAS_Name = 'MRADIO'\n
+and Sub_Transaction_Type='0'\n and Sub_Type IN ('1', '2'))\n OR (VAS_Name = 'MTSUB'\n and TABLE_MSISDN LIKE
+'%totalCDR%'\n and Sub_Type IN ('1', '2', '3'))\n OR (VAS_Name = 'TYVN')\n OR (VAS_Name = 'ZootaVNP'\n and Sub_Type IN
+('1', '3'))\n OR (VAS_Name = 'IBOX'\n and TABLE_Col IN ('MYIVRCALLLOG', 'MYVASCLOUDCDR')\n and Price>0)\n OR (VAS_Name =
+'VietTalk'\n and Sub_Transaction_Type IN ('1', '2', '3', '4')\n and Sub_Type IN ('1', '2'))\n OR (VAS_Name =
+'ZootaMBF'\n and TABLE_MSISDN='CDR')), 0)>0))\nORDER BY \"L\u01b0\u1ee3t T\u1ea3i\" DESC\nLIMIT 10000", "status":
+"success", "stacktrace": null, "rowcount": 4, "data": {"columns": ["L\u01b0\u1ee3t T\u1ea3i", "T\u1ed5ng Doanh thu"],
+"html": "<table border=\"1\" class=\"dataframe dataframe table table-striped table-bordered table-condensed
+    table-hover\">\n <thead>\n <tr style=\"text-align: right;\">\n <th></th>\n <th>L\u01b0\u1ee3t T\u1ea3i</th>\n <th>
+                T\u1ed5ng Doanh thu</th>\n </tr>\n <tr>\n <th>VGAME_1</th>\n <th></th>\n <th></th>\n </tr>\n </thead>\n
+    <tbody>\n <tr>\n <th>M\u1ee9c c\u01b0\u1edbc g\u00f3i 10000\u0111</th>\n <td>278</td>\n <td>2780000</td>\n </tr>\n
+        <tr>\n <th>M\u1ee9c c\u01b0\u1edbc g\u00f3i 2000\u0111</th>\n <td>993463</td>\n <td>1986926000</td>\n </tr>\n
+        <tr>\n <th>M\u1ee9c c\u01b0\u1edbc g\u00f3i 30000\u0111</th>\n <td>18</td>\n <td>540000</td>\n </tr>\n <tr>\n
+            <th>M\u1ee9c c\u01b0\u1edbc g\u00f3i 3000\u0111</th>\n <td>1</td>\n <td>3000</td>\n </tr>\n <tr>\n <th>All
+            </th>\n <td>993760</td>\n <td>1990249000</td>\n </tr>\n </tbody>\n</table>"}}

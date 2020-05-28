@@ -1,0 +1,7 @@
+"kafka:\n  ip: 10.84.86.123\n  port: '9092'\nmysql: mysql+pymysql://root:124CSC2k18@10.84.86.96/bi_wrapper\n\
+  password: hoangcongson\nreceiver_email: config/receiver_mail.txt\nsender_email:\
+  \ hoangcongsonbsoft@gmail.com\ntime_send:\n  ibox:\n    DAILY_REVENUE: '2020-05-27'\n\
+  \  mradio:\n    time: '2020-01-01'\n  mtsub:\n    time: '2020-01-01'\n  playbox:\n\
+  \    time: '2020-01-01'\n  tyvn:\n    time: '2020-01-01'\n  vgame:\n    time: '2020-01-01'\n\
+  \  viettalk:\n    time: '2020-01-01'\n  zootambf:\n    time: '2020-01-01'\n  zootavnp:\n\
+  \    time: '2020-01-01'\ntopic: anomaly_notify\n"

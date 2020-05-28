@@ -1,0 +1,11 @@
+[Unit]
+Description=Anomaly Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /root/Anomaly_Vgame/run.py
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+clickhouse :
+  ip : 10.3.3.160
+kafka :
+  ip : 10.84.86.123
+  port : 9092
+anomaly :
+  percent : 0.1
